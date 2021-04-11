@@ -20,8 +20,7 @@ const getFive = (term, loc) => {
     //log URI
     console.log(uri);
   
-    //stage the request using private bearer !REMOVE TOKEN WHEN PUBLISHING TO GIT!
-    //or rip my CC somebody bout to spam 50000 req/s
+    
     var settings = {
         method: 'GET',
         url: uri
