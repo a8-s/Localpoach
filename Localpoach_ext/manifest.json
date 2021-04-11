@@ -1,0 +1,34 @@
+{
+    "name": "Localpoach_ext",
+    "version": "0.1.0",
+    "manifest_version": 2,
+    "icons": {
+        
+    },
+    "content_scripts":[
+        {
+            "matches":["<all_urls>"],
+            "js":["jquery.js", "foreground.js"],
+            "css":["styles.css"]
+        }
+    ],
+    "background": {
+        
+        
+        "scripts":["background.js"]
+        
+    },
+
+    
+
+    "options_page": "./options.html",
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "tabs",
+        "storage",
+        "<all_urls>",
+        "https://yelp.com/"
+    ]
+}

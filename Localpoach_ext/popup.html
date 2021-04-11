@@ -1,0 +1,65 @@
+<html>
+<head>
+    <title>Why not try out of these instead?</title>
+    <script src="popup.js" ></script>
+    
+    <script>
+        window.onload = () => {
+        
+        //console.log("test");
+        const searched_term= document.getElementsByTagName("title")[0];
+
+        var searched_term1=searched_term.toString();
+        var words=searched_term1.split(" ");
+
+        var food_type=words[0];
+        var zipcode="78705";
+        
+        //const list = `<ul>${namesArray.map(name => `<li>${name}</li>`).join('')}</ul>`;
+        document.getElementById('food').innerHTML = food_type;
+        };
+    </script>
+    <style>
+        body{width:550px;
+        height:500px;}
+        
+        .h3{
+            text-align: center;
+
+
+        }
+        .button {
+        background-color: #1c87c9;
+        border: none;
+        color: white;
+        padding: 20px 34px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+
+        
+    </style>
+</head>
+<body>
+    <h2>Why not try out of these instead?</h2>
+    <div id="food"></div>
+<u1>
+    <li><h3>Restaurant 1</h3><p>Here is the link 1</p></li>
+    <a href="https://www.google.com/" class="button">Learn More</a>
+    <li><h3>Restaurant 1</h3><p>Here is the link 1</p></li>
+    <a href="https://www.google.com/" class="button">Learn More</a>
+    <li><h3>Restaurant 1</h3><p>Here is the link 1</p></li>
+    <a href="https://www.google.com/" class="button">Learn More</a>
+</u1>
+
+</body>
+
+</html>
+
+
+  
+  
